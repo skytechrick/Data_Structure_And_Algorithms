@@ -60,4 +60,4 @@ int main(){
     traverse(head);
     reverse(head);
     return 0;
-}
+};
