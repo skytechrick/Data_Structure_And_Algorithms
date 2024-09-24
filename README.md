@@ -6,6 +6,12 @@ Welcome to the Data Structures and Algorithms (DSA) repository! This repository 
 1. Linked List
     - Single linked list using single pointer
     - Single linked list using double pointer
+    - Single linked list using global declaration
+    - Single linked list All Operation
+    - Double linked list using single pointer
+    - Double linked list using double pointer
+    - Double linked list All Operation
+
 
 ## Table of Contents
 
