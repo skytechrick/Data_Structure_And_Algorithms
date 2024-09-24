@@ -11,7 +11,7 @@ void Insert(Node **head, int data){
     if(*head == NULL){
         *head = New_Node;
         return;
-    }
+    };
     Node *temp = *head;
     while(temp->next != NULL){
         temp = temp->next;
@@ -33,8 +33,7 @@ int main(){
     while(a==1){
         printf(" \n1. Enter data to add ..: \n2. Traverse linked list..: \n0. Exit..:\n");
         scanf("%d", &choice);
-        switch (choice)
-        {
+        switch (choice){
             case 1:
                 printf("Enter data: ");
                 scanf("%d", &data);

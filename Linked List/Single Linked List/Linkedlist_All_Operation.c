@@ -37,8 +37,7 @@ void Traverse(Node *head){
         printf("%d -> ", temp->data);
         temp=temp->next;
     };
-    printf("NULL");
-    
+    printf("NULL");  
 }
 void Searching(Node *head, int data){
     Node *temp = head;
@@ -60,7 +59,6 @@ void Count(Node *head){
     };
     printf("Total number of elements are..: %d", c);  
 };
-
 void Delete (Node **head, int del){
     Node *temp = *head;
     if(temp == NULL){
@@ -85,7 +83,6 @@ void Delete (Node **head, int del){
         temp = temp->next;
     };
     printf("Data not found for deletion.");
-    
 };
 int main (){
     Node *head = NULL;
@@ -93,8 +90,7 @@ int main (){
     while (a == 1){
         printf("\n1. Add a number at beggining \n2. Add a number at the end \n3. Delete a number\n4. Traverse\n5. Searching \n6. Count \n0. Exit\nChoose a operation..: ");
         scanf("%d",&ch);
-        switch (ch)
-        {
+        switch (ch){
             case 1:
                 printf("Enter a data to insert (Beg)..: ");
                 scanf("%d", &data);
@@ -127,11 +123,7 @@ int main (){
             default:
                 printf("Invalid input");
                 break;
-        }
-
+        };
     };
-
-
     return 0;
 };
-

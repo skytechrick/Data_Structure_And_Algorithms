@@ -4,13 +4,10 @@ typedef struct ll {
     int data;
     struct ll* next;
 } Node;
-
-
 Node *Insert(Node *head , int data){              // Function type is Node* because we are returning head
     Node *New_Node = (Node*)malloc(sizeof(Node)); // Allocat memory for new node
     New_Node->data = data;                        // Assign data to new node
     New_Node->next = NULL;                        // Assign NULL to next of new node
-
     if (head == NULL)                             // If head is NULL then assign new node to head (In case of First Node)
     {
         return New_Node;                          // Return new node as head
@@ -23,7 +20,6 @@ Node *Insert(Node *head , int data){              // Function type is Node* beca
     temp->next = New_Node;                        // Assign new node to next of last node
     return head;                                  // Returning head
 }
-
 void Traverse (Node *head){                       // Function to traverse linked list
     Node *temp = head;                            // Assign head to temp (To temporary store head)
     while (temp != NULL)                          // Traverse till last node
@@ -41,8 +37,7 @@ int main()                                        // Main function - You know ab
     while(a==1){
         printf(" \n1. Enter data to add ..: \n2. Traverse linked list..: \n0. Exit..:\n");
         scanf("%d", &choice);
-        switch (choice)
-        {
+        switch (choice){
             case 1:
                 printf("Enter data: ");
                 scanf("%d", &data);
@@ -60,4 +55,4 @@ int main()                                        // Main function - You know ab
         };
     };
     return 0;
-}
+};
