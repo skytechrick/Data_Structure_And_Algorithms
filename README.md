@@ -25,8 +25,6 @@ Welcome to the Data Structures and Algorithms (DSA) repository! This repository 
    - [Backtracking](#backtracking)
    - [Greedy Algorithms](#greedy-algorithms)
 4. [Complexity Analysis](#complexity-analysis)
-5. [Contributing](#contributing)
-6. [License](#license)
 
 ## Introduction
 
