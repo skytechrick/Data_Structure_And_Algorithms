@@ -6,35 +6,35 @@ typedef struct ll {
 } Node;
 
 
-Node *Insert(Node *head , int data){
-    Node *New_Node = (Node*)malloc(sizeof(Node));
-    New_Node->data = data;
-    New_Node->next = NULL;
+Node *Insert(Node *head , int data){              // Function type is Node* because we are returning head
+    Node *New_Node = (Node*)malloc(sizeof(Node)); // Allocat memory for new node
+    New_Node->data = data;                        // Assign data to new node
+    New_Node->next = NULL;                        // Assign NULL to next of new node
 
-    if (head == NULL)
+    if (head == NULL)                             // If head is NULL then assign new node to head (In case of First Node)
     {
-        return New_Node;
+        return New_Node;                          // Return new node as head
     }
-    Node *temp = head;
-    while (temp->next != NULL)
+    Node *temp = head;                            // Assign head to temp (To temporary store head)
+    while (temp->next != NULL)                    // Traverse till last node
     {
-        temp = temp->next;
+        temp = temp->next;                        // Move to next node
     }
-    temp->next = New_Node;
-    return head;
+    temp->next = New_Node;                        // Assign new node to next of last node
+    return head;                                  // Returning head
 }
 
-void Traverse (Node *head){
-    Node *temp = head;
-    while (temp != NULL)
+void Traverse (Node *head){                       // Function to traverse linked list
+    Node *temp = head;                            // Assign head to temp (To temporary store head)
+    while (temp != NULL)                          // Traverse till last node
     {
-        printf("%d -> ", temp->data);
-        temp = temp->next;
+        printf("%d -> ", temp->data);             // Print data of node
+        temp = temp->next;                        // Move to next node
     };
     printf("NULL\n");
 };
 
-int main()
+int main()                                        // Main function - You know about main function I am not going to add comments.
 {
     Node *head = NULL;
     int choice, a = 1, data;
