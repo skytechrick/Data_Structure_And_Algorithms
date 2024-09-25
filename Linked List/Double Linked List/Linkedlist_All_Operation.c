@@ -38,17 +38,36 @@ void InsertEnd(Node **head, int data){
 };
 void Traverse(Node *head){
     Node *temp = head;
+    if(temp == NULL){
+        printf("Double linked list is empty.");
+        return;
+    };
     while(temp != NULL){
         printf("%d -> ", temp->data);
         temp = temp->next;
     };
     printf("NULL\n");
 };
+void Reverse(Node *head){
+    Node *temp = head;
+    if(temp == NULL){
+        printf("Double linked list is empty.");
+        return;
+    };
+    while(temp->next != NULL){
+        temp = temp->next;
+    };
+    while(temp != NULL){
+        printf("%d -> ",temp->data);
+        temp = temp->prev;
+    }; 
+    printf("NULL\n");
+};
 int main(){
     Node *head = NULL;
     int a = 1,ch, data;
     while(a == 1){
-        printf("1. Add data to end\n2. Add data to beg\n3. Traverse\n4. Delete\n5. Search\n6. Count\n0. Exit\nChoose a number...:");
+        printf("1. Add data to end\n2. Add data to beg\n3. Traverse\n4. Delete\n5. Search\n6. Count\n7. Reverse \n0. Exit\nChoose a number...:");
         scanf("%d",&ch);
         switch(ch){
             case 1:
@@ -63,6 +82,9 @@ int main(){
                 break;
             case 3:
                 Traverse(head);
+                break;
+            case 7:
+                Reverse(head);
                 break;
             case 0:
                 a = 99;
