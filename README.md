@@ -1,5 +1,5 @@
 #### Before you start:
-If you are face any issue or feel to add anything new, then I request you to raise an issue in the issue section [Issues Section link](https://github.com/skytechrick/Data_Structure_And_Algorithms/issues)
+If you are face any issue or want to add anything new, then I request you to raise an issue in the issue section [Issues Section link](https://github.com/skytechrick/Data_Structure_And_Algorithms/issues)
 
 
 
