@@ -67,6 +67,43 @@ void Reverse(Node *head){
     printf("NULL\n");
 };
 
+void Delete(Node **head,int del){
+    Node *temp = *head;
+    if(temp == NULL){
+        printf("List is empty\n");
+        return;
+    };
+    if(temp->data == del && temp->prev == temp && temp->next == temp){
+        printf("Deleted successful.\n");
+        free(temp);
+        *head = NULL;
+        return;
+    };
+    Node *ptr = NULL;
+    do{
+        if(temp->data == del && ptr == NULL){
+            temp->next->prev = temp->prev;
+            temp->prev->next = temp->next;
+            *head = temp->next;
+            free(temp);
+            printf("Deleted successful.\n");
+            return;
+        };
+        if(temp->data == del){
+            ptr->next = temp->next;
+            temp->next->prev = ptr;
+            free(temp);
+            printf("Deleted successful.\n");
+            return;
+        };
+        ptr = temp;
+        temp = temp->next;
+    }while(temp != *head);
+    printf("Data not found for deletion.\n");
+
+};
+
+
 void Count(Node *head){
     Node *temp = head;
     int c = 0;
@@ -103,7 +140,7 @@ void main(){
     int a = 1, ch, data;
     system("clear");
     while(a==1){
-        printf("1. Insert data to Insert(Beg).\n2. Insert data to Insert(End).\n3. Traverse\n4. Count\n5. Search\n6. Reverse\n0. Exit\nEnter your choice..: ");
+        printf("1. Insert data to Insert(Beg).\n2. Insert data to Insert(End).\n3. Traverse\n4. Count\n5. Search\n6. Reverse\n7. Delete\n0. Exit\nEnter your choice..: ");
         scanf("%d", &ch);
         switch(ch){
             case 1:
@@ -129,6 +166,11 @@ void main(){
                 break;
             case 6:
                 Reverse(head);
+                break;
+            case 7:
+                printf("Enter data to Delete..: ");
+                scanf("%d", &data);
+                Delete(&head, data);
                 break;
             case 0:
                 a = 34;
