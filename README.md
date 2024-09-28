@@ -1,3 +1,6 @@
+#### Before you start, if you are face any issue or feel to add anything new, then I request you to raise an issue in the issue section [Issues Section link](https://github.com/skytechrick/Data_Structure_And_Algorithms/issues)
+
+
 # Data Structures and Algorithms (DSA)
 
 Welcome to the Data Structures and Algorithms (DSA) repository! This repository serves as a comprehensive guide to understanding and implementing various data structures and algorithms. I will be updating the repository on a daily basis as I cover all the topics. Whether you're preparing for coding interviews or simply want to enhance your programming skills, this repository provides valuable resources. (In C programming language)
