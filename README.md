@@ -1,4 +1,6 @@
-#### Before you start, if you are face any issue or feel to add anything new, then I request you to raise an issue in the issue section [Issues Section link](https://github.com/skytechrick/Data_Structure_And_Algorithms/issues)
+#### Before you start:
+If you are face any issue or feel to add anything new, then I request you to raise an issue in the issue section [Issues Section link](https://github.com/skytechrick/Data_Structure_And_Algorithms/issues)
+
 
 
 # Data Structures and Algorithms (DSA)
@@ -7,13 +9,15 @@ Welcome to the Data Structures and Algorithms (DSA) repository! This repository 
 
 ### Things covered till now
 1. Linked List
-    - Single linked list using single pointer
-    - Single linked list using double pointer
-    - Single linked list using global declaration
-    - Single linked list All Operation
-    - Double linked list using single pointer
-    - Double linked list using double pointer
-    - Double linked list All Operation
+    - Singly linked list using single pointer
+    - Singly linked list using double pointer
+    - Singly linked list using global declaration
+    - Singly linked list All Operation
+    - Doubly linked list using single pointer
+    - Doubly linked list using double pointer
+    - Doubly linked list All Operation
+    - Circular linked list
+    - Circular linked list All Operation
 
 
 ## Table of Contents
